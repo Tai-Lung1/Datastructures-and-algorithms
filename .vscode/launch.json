@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Datastructures-and-algorithms/Arrays",
-      "program": "c:/Datastructures-and-algorithms/Arrays/build/Debug/outDebug",
+      "cwd": "c:/Datastructures-and-algorithms/Algos",
+      "program": "c:/Datastructures-and-algorithms/Algos/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
