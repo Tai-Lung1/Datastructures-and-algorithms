@@ -15,6 +15,9 @@ void dfs(int s)
 }
 void bfs(int s){
     int m,i;
+    for(i=1;i<=n;i++)
+        u[i]=0;
+    rear=front=0;
     u[s]=1;
     q[++rear]=s;
     printf("Reachable officers using BFSS method from given Officerr: %d are \n",s);
@@ -30,7 +33,7 @@ void bfs(int s){
         }
     }
 }
-void main(){
+int main(){
     int s,i,j,ch;
     while(1)
     {
@@ -46,14 +49,33 @@ void main(){
                     scanf("%d",&a[i][j]);
             }
             break;
-            case 2:s=1;
+            case 2:printf("Depth First Search Traversal\n");
+            printf("Enter Source Officier\n");
+            scanf("%d",&s);
+            for(i=1;i<=n;i++)
+                v[i]=0;
             dfs(s);
+            for(i=1;i<=n;i++){
+                if(v[i]==0){
+                    printf("Graph is not connected\n");
+                    break;
+                }
+            }
             break;
-            case 3:s=1;
+            case 3:printf("Breadth First Search Traversal\n");
+            printf("Enter Source Officier\n");
+            scanf("%d",&s);
             bfs(s);
+            for(i=1;i<=n;i++){
+                if(u[i]==0){
+                    printf("Graph is not connected\n");
+                    break;
+                }
+            }
             break;
             case 4:exit(0);
             default:printf("invalid\n");
         }
     }
+    return 0;
 }
