@@ -10,7 +10,7 @@ void dfs(int s)
         if(a[s][i]==1 && v[i]==0){
             printf("Officer %d->Officier%d\n",s,i);
             dfs(i);
-        }
+        }                                                         
     }
 }
 void bfs(int s){
@@ -37,7 +37,7 @@ int main(){
     int s,i,j,ch;
     while(1)
     {
-        printf("1.Create a graph\n2.DFS treaversal method\n3.bfs\n4.exit");
+        printf("1.Create a graph\n2.DFS traversal method\n3.bfs\n4.exit");
         printf("Enter the choice\n");
         scanf("%d",&ch);
         switch(ch){

@@ -6,9 +6,10 @@ struct node{
     struct node *lc,*rc;
 };
 typedef struct node *NODE;
-void create(){
+int delflag;
+NODE createnode(){
     NODE temp;
-    temp=(NODE)malloc(sizeof(struct node));
+    temp= (NODE)malloc(sizeof(struct node));
     printf("Enter the Name : ");
     scanf( "%s",temp->name);
     printf("Enter the phone:");
@@ -16,4 +17,20 @@ void create(){
     temp->lc=NULL;
     temp->rc=NULL;
     return temp;
+}
+void insertBST(NODE root,NODE newnode){
+    if(strcmp(newnode->name,root->name)<0){
+        if(root->lc==NULL)
+            root->lc=newnode;
+        else
+            insertBST(root->lc,newnode);
     }
+    else{
+        if(root->rc==NULL)
+            root->rc=newnode;
+        else
+            insertBST(root->rc,newnode);
+    }
+}
+void inorder(NODE r) {
+ 
