@@ -17,11 +17,11 @@ public class maybe {
         int r = m.hey();
         int s = m.hey1();
     }
-}
+
         int hey1(){
             System.out.println(array[1]);
             return 1;
         }
         int r = hey();
     }
-}
+
