@@ -33,4 +33,6 @@ void insertBST(NODE root,NODE newnode){
     }
 }
 void inorder(NODE r) {
+    if()
+}
  

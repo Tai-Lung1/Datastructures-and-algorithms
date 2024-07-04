@@ -1,0 +1,15 @@
+
+# Exclude output folder
+output/
+
+# Exclude .vscode folder from every directory
+**/.vscode/
+
+# Exclude .exe files
+*.exe
+
+# Exclude .env files
+*.env
+
+# Exclude .class files
+*.class

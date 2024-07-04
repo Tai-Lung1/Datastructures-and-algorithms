@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define SIZE 10
+int SIZE;
 
 int hash(int key)
 {
@@ -39,13 +39,11 @@ void display(int H[])
 
 int main()
 {
+    printf("enter the size:");
+    scanf("%d",&SIZE);
     int HT[SIZE] = {0};
 
-    insert(HT, 12);
-    insert(HT, 25);
-    insert(HT, 35);
-    insert(HT, 26);
-    insert(HT, 42);
+
 
     display(HT);
 

@@ -1,3 +1,4 @@
+package Algos;
 import java.util.Scanner;
 public class Warshall
 {

@@ -57,7 +57,7 @@ void convert(){
             item=pop();
         }
         else{
-            while((!empty()) && precedence(symb)<=precedence(s.item[s.top])&&!empty()){
+            while((!empty()) && precedence(symb)<=precedence(s.item[s.top])){
                 postfix[pos++]=pop();
             }
             push(symb);
