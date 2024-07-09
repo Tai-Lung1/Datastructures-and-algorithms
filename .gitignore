@@ -13,3 +13,6 @@ output/
 
 # Exclude .class files
 *.class
+
+# Exclude .json files
+*.json
