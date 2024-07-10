@@ -1,3 +1,4 @@
+ 	
 #include <fcntl.h> 
 #include <sys/stat.h> 
 #include <sys/types.h> 
@@ -15,4 +16,6 @@ close(fd);
  	
 unlink(myfifo); /* remove the FIFO */ 
 return 0; 
-} 
+}
+
+// [root@localhost /]# gedit reader.c 
